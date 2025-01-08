@@ -8,7 +8,6 @@ export class VerifyCartPage {
     }
 
     async openCartAndVerify() {
-        await this.page.getByRole('link', { name: 'Mon panier' }).hover();
         await this.page.getByRole('link', { name: 'Visualiser mon panier' }).click();
     }
 }
